@@ -1,0 +1,95 @@
+---
+layout: default
+---
+</head>
+
+<body class="landing-wrapper">
+
+  {% include header.html %}
+
+  <div class="page-content">
+
+    <div class="banner">
+      <div class="banner-content headline">
+        <h2>Welcome to the internet home of Josh Morse<br /><br />
+          An experienced UX/UI Leader</h2>
+      </div>
+    </div>
+
+    <div class="banner bg-color">
+        <div class="banner-content">
+          {{ content }}
+          <div class="btn-wrapper top-double-padding">
+            <a href="/about" class="btn primary">More about me</a>
+          </div>
+        </div>
+      </div>
+    
+    <div class="banner">        
+      <div class="banner-content wide headline">       
+        <h2>Featured Projects</h2>
+        <div class="home-cards wrapper">
+          {% assign projects = site.projects | sort:"date" %}
+          {% for project in projects reversed %}
+            {% if project.primary %}
+              {% assign first-page = site[project.label] | first %}
+              <div class="home-card-wrapper">
+                <a href="{{ project.url }}" class="ajax-popup-link">
+                  <div class="home-card">
+                    <div class="home-card-heading">{{ project.title }}</div>
+                    <div class="project-image-wrapper">
+                      <img class="project-image" src="/assets/images/projects/{{ project.image }}" />
+                    </div>
+                    <p class="home-card-sub">{{ project.description }}</p>
+                  </div>
+                </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="btn-wrapper top-double-padding">
+          <a href="/projects" class="btn primary">View all projects</a>
+        </div>
+      </div> 
+    </div>
+    
+    <div class="banner dark-grey">
+      <div class="banner-content inverted">
+        <h3>Some of my skills</h3>
+        <ul class="three-column">
+          <li>Agile sprint planning</li>
+          <li>Design system creation & maintenance</li>
+          <li>Employee reviews & mentorship</li>
+          <li>Hiring management</li>
+          <li>User research</li>
+          <li>Web analytics & KPIs</li>
+          <li>Wireframes & prototypes</li>
+          <li>Working remotely</li>
+          <li>Adobe Photoshop & Illustrator</li>
+          <li>Axure RP</li>
+          <li>Confluence & Jira administration</li>
+          <li>Google Analytics & Tag Manager</li>
+          <li>Heap Analytics</li>
+          <li>Microsoft Office & Google Docs</li>
+          <li>Sketch & InVision</li>
+          <li>HTML/CSS/Sass</li>
+          <li>JavaScript/TypeScript</li>
+          <li>Jekyll & AngularJS</li>
+        </ul>
+        <div class="btn-wrapper top-double-padding">
+          <a href="/resume" class="btn primary">View my resume</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="banner-content headline">
+        <h3>Questions? Comments? Just want to get in touch?</h3>
+        <div class="btn-wrapper top-double-padding">
+          <a href="/contact" class="btn primary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+
+  {% include footer.html %}
+</div>

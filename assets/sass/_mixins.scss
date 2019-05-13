@@ -1,0 +1,25 @@
+/* Sass mixins for the site */
+@mixin flex($direction, $spacing:null, $align:null, $wrap:null) {
+  display: flex;
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  flex-direction: $direction;
+  -webkit-flex-direction: $direction;
+  justify-content: $spacing;
+  align-items: $align;
+  -webkit-box-align: $align;
+  -moz-box-align: $align;
+  -ms-flex-align: $align;
+  -webkit-align-items: $align;
+  flex-wrap: $wrap;
+  -webkit-flex-wrap: $wrap;
+}
+
+@mixin background($color:null, $image:null, $repeat: null, $size:null) {
+  background-color: $color;
+  background-image: url($image);
+  background-repeat: $repeat;
+  background-size: $size;
+}

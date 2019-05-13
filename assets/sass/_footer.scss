@@ -1,0 +1,10 @@
+/* Styles for the site footer */
+
+.site-footer {
+  font-size: 13px;
+  text-align: center;
+  background-color: #FAFAFA;
+  border-top: solid  $border-color 1px;
+  width: 100%;  
+  @include flex(row, center, center);
+}

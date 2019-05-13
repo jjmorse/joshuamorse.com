@@ -1,0 +1,14 @@
+<div class="lightbox-wrapper">
+  <h2 class="lightbox-heading page-title">{{ page.heading }}</h2>
+  <div class="lightbox">
+    {% if page.image %}
+      <div class="project-image-wrapper">
+        <!-- <div class="image" style="background-image: url('/assets/images/projects/{{ page.image }}');" onclick="expandElement(this)"></div> -->
+        <img src="/assets/images/projects/{{ page.image }}" onclick="expandElement(this)">
+      </div>
+    {% endif %}
+    <div class="lightbox-content">
+      {{ content }}
+    </div>
+  </div>
+</div>

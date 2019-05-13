@@ -1,0 +1,18 @@
+/* Styles for buttons */
+
+.btn {
+  background-color: $button-color;
+  border-radius: 10px;
+  padding: 14px;
+  color: $body-color-inverted;
+  transition: .5;
+  &:hover {
+    text-decoration: none;
+    background-color: lighten($button-color, 5%);
+  }
+}
+
+.btn-wrapper {
+  @include flex(row, center, center);
+  width: 100%;
+}

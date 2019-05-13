@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The home page for Josh Morse, Experienced UX/UI Leader">
+  <meta name="keywords" content="">
+  <meta name="author" content="Joshua Morse">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>{% if page.title %} {{ page.title | escape }} {% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <!-- Store original title -->
+  <script>
+    const pageTitle = "{{ page.title }}";
+  </script>
+
+  <!-- Google Tag Manager Staging -->
+  {% if jekyll.environment != "production" %}
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=vyqyOakymVVzqbUhKjj9Ug&gtm_preview=env-11&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XM8CGZ');</script>
+  {% endif %}
+  <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager Production-->
+  {% if jekyll.environment == "production" %}
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=j1NxliKPXz2LiaCio-aKPg&gtm_preview=env-2&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XM8CGZ');</script>
+  {% endif %}
+  <!-- End Google Tag Manager -->
+
+  <!-- Stylesheets -->
+  <!-- <link rel="stylesheet" href="{{site.url}}{{ '/assets/css/main.css' | prepend: site.baseurl }}"> -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="/assets/css/vendor/magnific-popup.css">
+
+  {{ content }}
+
+  <!-- Local scripts -->
+  <!-- Google Tag Manager Staging (noscript) -->
+  {% if jekyll.environment != "production" %}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XM8CGZ&gtm_auth=vyqyOakymVVzqbUhKjj9Ug&gtm_preview=env-11&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {% endif %}
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager Production (noscript) -->
+  {% if jekyll.environment == "production" %}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XM8CGZ&gtm_auth=j1NxliKPXz2LiaCio-aKPg&gtm_preview=env-2&gtm_cookies_win=x"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {% endif %}
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Local utilities -->
+  <script src="/assets/js/utilities.js"></script>
+  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+  <script src="/assets/js/vendor/jquery-2.2.3.min.js"></script>
+
+  <!-- Magnific Popup core JS file -->
+  <script src="/assets/js/vendor/magnific.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.ajax-popup-link').magnificPopup({
+        type: 'ajax',
+
+        // Delay in milliseconds before popup is removed
+        removalDelay: 300,
+
+        // Class that is added to popup wrapper and background
+        // make it unique to apply your CSS animations just to this exact popup
+        mainClass: 'mfp-fade'
+      });
+      $('.image-popup-link').magnificPopup({
+        type:'image',
+      
+        // Delay in milliseconds before popup is removed
+        removalDelay: 300,
+
+        // Class that is added to popup wrapper and background
+        // make it unique to apply your CSS animations just to this exact popup
+        mainClass: 'mfp-fade'
+      });
+    });
+  </script>
+</body>
+
+</html>

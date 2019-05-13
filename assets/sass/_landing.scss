@@ -1,0 +1,100 @@
+/* Styles for the index page */
+
+.landing-wrapper {
+  display: flex;
+  flex-direction: column;
+  .home-cards {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+      display: block;
+    }
+    .project-image-wrapper {
+      height: 300px;
+      @include flex(column, center, center);
+      .project-image {
+        max-width: 350px;
+        max-height: 300px;
+      }
+    }
+  }
+
+  .home-card-wrapper {
+    padding-top: 1.5rem;
+    width: 390px;
+    margin: auto $default-padding;
+    a {
+      text-decoration: none;
+      color: $body-color;
+    }
+  }
+
+  .home-card {
+    padding: $default-padding;
+    background: #fff;
+    border: 1px solid #d1d6dc;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 0 rgba(99,112,125,.13);
+    transition: all .4s cubic-bezier(.715, -.265, .245, 1.345);
+    text-align: center;
+    &:hover {
+      transform: scale(1.08);
+    }
+    .home-card-heading {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .home-card-sub {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+  }
+
+  .banner {
+    justify-content: space-between;
+    align-items: center;
+    @include flex(column, flex-start, center);
+    .banner-content {
+      max-width: $max-page-width;
+      width: 100%;
+      padding: calc(4 * #{$default-padding});
+      &.headline {
+        text-align: center;
+      }
+      &.inverted {
+        h1, h2, h3, h4, p, ul, li {
+          color: $body-color-inverted;
+        }
+      }
+      &.wide {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    &.bg-color {
+      @include background($bg-color);
+    }
+    &.dark-grey {
+      @include background($dark-grey);
+    }
+    &.light-grey {
+      @include background($light-grey);
+    }
+  }
+
+  ul.three-column {
+    column-width: 350px;
+  }
+
+  .white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+}

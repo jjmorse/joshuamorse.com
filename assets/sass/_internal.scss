@@ -1,0 +1,99 @@
+/* Styles for internal (not landing) pages */
+.internal-wrapper {
+  @include flex(column, space-between, center);
+  .internal-columns {
+    margin: calc(#{$default-padding} * 2) $default-padding;
+    @include flex(row, space-between, top);
+    .content-column {
+      flex-grow: 2;
+      width: 100%;
+      margin-right: $default-padding;
+      padding: calc(#{$default-padding} * 2);
+      background-color: $bg-color;
+      border-radius: 10px;
+    }
+    .social-column {
+      background-color: $bg-color;
+      border-radius: 10px;
+      padding: calc(#{$default-padding} * 2) $default-padding;
+      margin-left: $default-padding;
+      border-left: solid 1px $border-color;
+      @include flex(column, null, start);
+      > div {
+        border-bottom: 1px solid $border-color;
+        padding-top: $default-padding;
+        padding-bottom: $default-padding;
+        width: 100%;
+        &.github a::before {
+          background-image: url(/assets/icons/github.svg);
+        }
+        &.instagram a::before {
+          background-image: url(/assets/icons/instagram.svg);
+        }
+        a.logo {
+          font-size: 18px;
+          font-weight: bold;
+          color: $body-color;
+          &:hover {
+            text-decoration: none;           
+          }
+          &::before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            content: " ";
+            margin-right: 8px;
+          }
+        }
+      } 
+    }
+  }
+  .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 0 auto $default-padding;
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%; 
+    }
+  }
+  .project-rows {
+    width: 100%;
+    @include flex(column, center, center);
+    margin-top: $default-padding;
+    .project-row {
+      width: 100%;
+      a {
+        color: $body-color;
+        &:hover {
+          text-decoration: none;        
+        }  
+      } 
+      .project-row-contents {
+        @include flex(row, center, top);
+        border: 1px solid $border-color;
+        &:hover {
+          background-color: $light-grey;
+        }
+        div {
+          padding: $default-padding;
+          min-width: 200px;
+        }
+        .project-image-wrapper img {
+          max-height: 200px;
+          max-width: 160px;
+        }
+        .copy {
+          flex-grow: 2;
+        }
+      }
+    }
+  }
+  .resume-html .contents {
+    border: 1px solid $border-color;
+    margin-top: $default-padding;
+    padding: $default-padding;
+  }
+}

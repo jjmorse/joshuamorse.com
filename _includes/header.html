@@ -1,0 +1,15 @@
+<div class="site-header ">
+  <div class="header-wrapper">
+    <div class="logo">
+      <a class="site-title" href="{{site.url}}">
+        <h3>Joshua Morse</h3>
+      </a>
+    </div>
+    <div class="navigation">
+      <a href="/about" {% if page.url contains 'about' %}class="active"{% endif %}>About Me</a>
+      <a href="/projects" {% if page.url contains 'projects' %}class="active"{% endif %}>Projects</a>
+      <a href="/resume" {% if page.url contains 'resume' %}class="active"{% endif %}>Resume</a>
+      <a href="/contact" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact Me</a>
+    </div>
+  </div>
+</div>

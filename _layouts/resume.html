@@ -1,0 +1,16 @@
+---
+layout: internal
+---
+You can view my full resume below and <a href="{{ page.link }}">download the PDF</a>.
+<div class="resume-wrapper">
+  <div class="resume-embed">
+    <p>Trouble viewing the embedded resume? <a href="#" onclick="toggleView('.resume-embed', '.resume-html');">View the HTML version</a>.</p>
+    <embed src="{{ page.link }}" type="application/pdf" width="100%" height="1170px" />
+  </div>
+  <div class="resume-html" style="display: none;">
+    <p>Prefer to see the full resume? <a href="#" onclick="toggleView('.resume-html', '.resume-embed');">View the embedded PDF</a>.</p>
+    <div class="contents">
+      {{ content }}
+    </div>
+  </div>
+</div>

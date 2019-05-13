@@ -1,0 +1,40 @@
+/* Styles for the site header */
+
+.site-header {
+  min-height: $header-height;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-bottom: solid  $border-color 1px;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  @include flex(row, center, center);
+  .header-wrapper {
+    max-width: $max-page-width;
+    width: 100%;
+    @include flex(row, space-between, null, wrap);
+    align-items: center;
+    .site-title {
+      @include flex(row, null, center);
+    }
+    a {
+      text-decoration: none;
+      color: $body-color;
+      &.active {
+        border-bottom: 2px solid $accent-color;
+      }
+    }
+    .navigation {
+      @include flex(row);
+      a {
+        padding: 1rem;
+        &:hover {
+          background-color: $hover-color;
+        }
+      }
+    }
+  }
+  .logo {
+    margin-left: $default-padding;
+  }
+}

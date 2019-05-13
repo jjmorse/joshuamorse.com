@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<body class="internal-wrapper">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="internal-columns">
+          <div class="content-column">     
+            <h2 class="page-title">{{ page.title }}</h2>       
+            {% if page.top-image %}
+              <a href="{{ page.top-image }}" class="image-popup-link"><div class="image" style="
+                background-image: url('{{ page.top-image }}');
+                max-width: {{ page.top-image-width }};
+                "></div></a>
+            {% endif %}
+            {{ content }}
+            {% if page.bottom-image %}
+              <div class="image" style="
+              background-image: url('{{ page.bottom-image }}');
+              width: {{ page.bottom-image-width }};
+              "></div>
+            {% endif %}
+          </div>
+          <div class="social-column">
+            <h3 class="page-title">Social Media</h3>
+            <div class="twitter">
+              <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/jjmorse?ref_src=twsrc%5Etfw">Tweets by jjmorse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="linkedin">
+              <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="jjmorse"><a class="LI-simple-link" href='https://www.linkedin.com/in/jjmorse?trk=profile-badge'>Joshua Morse</a></div>
+            </div>
+            <div class="github">
+              <a href="https://github.com/jjmorse" target="_blank" class="logo">My GitHub Page</a>
+            </div>
+            <div class="instagram">
+              <a href="https://www.instagram.com/jjmorse/" target="_blank" class="logo">My Instagram Feed</a>
+            </div>
+          </div>
+        </div>    
+      </div>
+      {% include footer.html %}
+    </div>
+
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>

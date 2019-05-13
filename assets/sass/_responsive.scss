@@ -1,0 +1,26 @@
+/* Styles for responsive behavior on small/mobile screens */
+
+@media screen and (max-width: 800px) {
+  .internal-wrapper {
+    .internal-columns {
+      flex-wrap: wrap;
+      .social-column {
+        margin-top: calc(#{$default-padding} * 2);
+        margin-left: auto;
+        margin-right: auto;      
+      }
+      .content-column {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .project-rows .project-row .project-row-contents .project-image-wrapper {
+    display: none;
+  }
+  html {
+    font-size: 14px;
+  }
+}
