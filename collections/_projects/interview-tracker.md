@@ -3,6 +3,7 @@ title: Customer Interview Tracker
 heading: Customer interview tracking tool
 description: A hackathon project I designed and coded myself to fill an internal company need.
 primary: true
+priority: 3
 company: RightScale
 date: 2016-01-01
 image: interview-tracker.png

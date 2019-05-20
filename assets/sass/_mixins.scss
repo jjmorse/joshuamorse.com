@@ -23,3 +23,8 @@
   background-repeat: $repeat;
   background-size: $size;
 }
+
+@mixin fit-content() {
+  width: fit-content;
+  width: -moz-fit-content;
+}

@@ -2,7 +2,7 @@
 layout: internal
 ---
 {{ content }}
-<h3>RightScale/Flexera projects</h3>
+<h3 class="project-category">RightScale/Flexera projects</h3>
 Projects completed in an agile frameworks for enterprise B2B SaaS products.
 <div class="project-rows">
   {% assign projects = site.projects | sort:"date" %}
@@ -26,12 +26,36 @@ Projects completed in an agile frameworks for enterprise B2B SaaS products.
     {% endif %}
   {% endfor %}
 </div>
-<h3>Enlighten projects</h3>
+<h3 class="project-category">Enlighten projects</h3>
 Projects completed while working for a full-service, digital agency in a waterfall environment.
 <div class="project-rows">
   {% assign projects = site.projects | sort:"date" %}
   {% for project in projects reversed %}
     {% if project.company == "Enlighten" %}
+      {% assign first-page = site[project.label] | first %}
+      <div class="project-row">
+        <a href="{{ project.url }}" class="ajax-popup-link">
+          <div class="project-row-contents">
+            <div class="copy">
+              <b>{{ project.title }}</b><br />
+              <i>{{ project.date | date: "%B %Y" }}</i>
+              <p>{{ project.description }}</p>
+            </div>
+            <div class="project-image-wrapper">
+              <img class="project-image" src="/assets/images/projects/{{ project.image }}" />
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+<h3 class="project-category">Academic projects</h3>
+Projects completed as a graduate student at the University of Michigan.
+<div class="project-rows">
+  {% assign projects = site.projects | sort:"date" %}
+  {% for project in projects reversed %}
+    {% if project.company == "Academic" %}
       {% assign first-page = site[project.label] | first %}
       <div class="project-row">
         <a href="{{ project.url }}" class="ajax-popup-link">

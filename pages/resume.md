@@ -10,20 +10,20 @@ permalink: /resume/
 **User Experience Manager**  
 **[RightScale Inc./Flexera (post-acquisition)](https://www.flexera.com){:target="_blank"}**  
 *February 2013 - Present*  
+- Led the design of products ranked top in the the [2019 Gartner Cloud Management](https://www.rightscale.com/lp/cloud-management-platform-magic-quadrant){:target="_blank"} and [2018 Forester Wave Hybrid Cloud](https://info.flexerasoftware.com/SLO-WP-Forrester-Wave-Hybrid-Cloud-Management-2018-Report){:target="_blank"} Magic Quadrants. 
 - Hired, mentored, and managed a team of designers and researchers. 
 - Worked with product and engineering management to implement Lean practices; organizing cross-functional teams to develop new products. 
 - Managed web analytics and reporting across the product portfolio. 
 - Oversaw the creation of the [RightScale Design System](http://design.rightscale.com/){:target="_blank"} by the UX team. 
 - Created designs, conducted user research, and wrote front-end code. 
-- Led the design of products ranked top in the the [2019 Gartner Cloud Management](https://www.rightscale.com/lp/cloud-management-platform-magic-quadrant){:target="_blank"} and [2018 Forester Wave Hybrid Cloud](https://info.flexerasoftware.com/SLO-WP-Forrester-Wave-Hybrid-Cloud-Management-2018-Report){:target="_blank"} Magic Quadrants. 
 
 **Senior Interaction Designer**  
 **[RightScale Inc.](http://www.rightscale.com/){:target="_blank"}**  
-*April 2010 - February*  
-- As the only UX designer at the company, established UX processes within an existing agile scrum framework. 
-- Developed wireframes, specifications, & prototypes for new features. 
+*April 2010 - February 2013*  
+- As the first and only UX designer at the company, established UX processes and evangelized user-centered design. 
+- Developed wireframes, personas, flowcharts, sitemaps, & prototypes.
+- Oversaw interaction design for RightScale's SaaS and mobile apps.
 - Organized a customer advisory group & conducted usability studies. 
-- Evangelized user-centered design across the company. 
 
 **Information Architect**  
 **[Enlighten (acquired by Perficient)](https://www.perficientdigital.com/){:target="_blank"}**  
@@ -72,10 +72,12 @@ permalink: /resume/
 
 **User Experience Management**
 - Agile sprint planning 
+- Contextual interviews & usability testing
 - Design system creation & maintenance 
 - Employee reviews & mentorship 
+- Flowcharts & sitemaps
 - Hiring management 
-- User research 
+- Personas, storyboards, & journey maps
 - Web analytics & KPIs 
 - Wireframes & prototypes 
 - Working remotely 
@@ -84,7 +86,7 @@ permalink: /resume/
 - Adobe Photoshop & Illustrator 
 - Axure RP 
 - Confluence & Jira administration 
-- Google Analytics & Tag Manager 
+- Google & Heap Analytics 
 - Heap Analytics 
 - Microsoft Office & Google Docs 
 - Sketch & InVision 
