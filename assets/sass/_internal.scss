@@ -59,6 +59,9 @@
       padding-top: 100%; 
     }
   }
+  .project-category {
+    margin-top: calc(#{$default-padding} * 2);
+  }
   .project-rows {
     width: 100%;
     @include flex(column, center, center);

@@ -23,7 +23,7 @@ In order to do my best work, I prefer an environment where:
 * Management, IT, HR, and internal administrators believe in enabling each employee to do their best work, not putting up barriers to long-term success in return for short-term savings.
 * Good design is a core aspect of the culture, and decision makers believe that a poor user experience is a barrier to release rather than something to be ignored.
 * Best-in-class tools are embraced. The best carpenters don't use discount department store hammers, and cheap computers and slow enterprise software ends up lowering morale and costing everyone time and money in the long run.
-* A remote-friendly culture focused on recruiting the best people and embracing tools and processes that support remote collaboration.
+* The culture is remote-friendly, focused on recruiting the best people and embracing tools and processes that support remote collaboration.
 * Regardless of background, anyone can succeed, diversity is celebrated, and harassment is not tolerated in any form.
 
 ### On the lighter side
@@ -34,5 +34,5 @@ Over the years, I have cultivated a variety of hobbies:
 * I'm an avid reader of both nonfiction and fiction (fantasy, mystery, and sci-fi being my favorite genres). 
 * I have a <a href="https://boardgamegeek.com/collection/user/jjmorse" target="_blank">large collection of board games</a> and participate in several gaming meetups.
 * I love theater, and have a membership with the Denver Center for the Performing Arts.
-* I am active with political and non-profit causes, and in another life I would likely have studied law.
-* I'm engaged with several local UX meetups, including serving as a mentor for [Hexagon UX](http://hexagonux.com/mentorship){:target="_blank"}.
+* I am engaged with current events and non-profit causes; in another life I would likely have studied law.
+* I'm involved with several local UX meetups, including serving as a mentor for [Hexagon UX](http://hexagonux.com/mentorship){:target="_blank"}.

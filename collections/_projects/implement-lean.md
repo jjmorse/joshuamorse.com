@@ -3,8 +3,9 @@ title: Implement Lean UX Practices
 heading: Implementing Lean UX at RightScale
 description: Transitioning from a centralized to a distributed, Lean UX process at RightScale
 primary: true
+priority: 2
 company: RightScale
-date: 2014-01-01
+date: 2015-01-01
 image: rightscale-lean-ux.jpg
 layout: lightbox
 ---
@@ -24,6 +25,8 @@ At the time, the UX team consisted of:
 
 ### Results
 With 3 key products including the new Self-Service application, I set up a system where each product and its corresponding engineering team had two embedded UX resources: a UX designer and a UI designer. These UX team members attended all engineering team meetings, and worked in close collaboration with product managers and developers to ensure that internally and externally vetted designs were available for developers before coding began. In addition, we retained a floating UX researcher resource who provided additional research support where necessary.
+
+Our Jira boards showed increased productivity from UX team members, and engineers that I surveyed in the months following the Lean inplementation reported higher satisfaction in working with the UX team.
 
 ### Process
 I received an early copy of [Lean UX](https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652) by Jeff Gothelf and Josh Seiden at a conference in 2013 around the time that I was hiring a UX designer, a UI designer, and a UX researcher. With the rapid growth of the UX team, I knew that I needed to update our processes and workflows with engineering and product management. In the past, UX had our own daily standup, and I took requests from engineering and assigned designers to work with teams on a per-project basis. This didn't scale as well with the growing team, it put a lot of extra work on me as a manager, and it meant that my designers couldn't get the depth of knowledge they needed with one engineering team and product. Lean UX seemed like a great solution for these problems, and paired well with the Agile processes that our engineering and product teams used. I discussed this direction with both product and engineering managers.

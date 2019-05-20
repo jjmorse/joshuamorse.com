@@ -4,7 +4,7 @@ heading: Instance Provisioner - Cloud Management
 description: Am update to an old and difficult to use feature of Cloud Management.
 primary: false
 company: RightScale
-date: 2015-12-01
+date: 2014-12-01
 image: instance-provisioner.png
 layout: lightbox
 ---
@@ -26,11 +26,11 @@ Once I understood the customer requirements and technical constraints, I began w
 Elements of the design process included:
 * Create a robust series of specifications, outlining the inputs necessary for AWS, with an eye towards the other supported clouds.
 * Develop an initial visual design.
-* Transform the design into a working interactive prototype with Axure RP
+* Transform the design into a working interactive prototype with Axure RP.
 * Get initial customer and internal feedback with informal usability tests.
 * Work closely with developers to implement the Instance Provisioner for AWS.
 
 ### Release
 The initial version of the Instance Provisioner was released for AWS. During this process, I was continuously iterating on the designs and specifications for the additional clouds while also gathering feedback from our initial users to tweak the overall design.
 
-<a href="/contact-me">Contact me</a> if you are interested in seeing examples of deliverables for the Bill Connector project.
+<a href="/contact-me">Contact me</a> if you are interested in seeing examples of deliverables.

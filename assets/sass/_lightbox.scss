@@ -1,49 +1,54 @@
 /* Styling the 3rd party popup modals */
-.mfp-content .lightbox-wrapper {
+.mfp-content {
   max-height: 90vh;
-  max-width: 1000px;
+  max-width: 1000px;    
   background-color: $bg-color;
   border-radius: 5px;
   margin: auto;
-  @include flex(column, center);  
-  .lightbox-heading {
-    padding: $default-padding calc(#{$default-padding} * 2) 0 calc(#{$default-padding} * 2);
-    &.page-title:after {
-      width: 100%;
-      margin-top: 12px;
+  .lightbox-wrapper {
+    @include flex(column, center);  
+    .lightbox-heading {
+      padding: $default-padding calc(#{$default-padding} * 2) 0 calc(#{$default-padding} * 2);
+      &.page-title:after {
+        width: 100%;
+        margin-top: 12px;
+      }
     }
-  }
-  .lightbox {
-    // max-height: calc(90vh - 113px);
-    overflow-y: auto;
-    padding: calc(#{$default-padding} * 2);    
-    .project-image-wrapper {
-      @include flex(column, center);
-      img {
-        max-width: 60%;
-        max-height: 400px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 5px;
-        margin: 0 auto $default-padding;
-        cursor: pointer;
-        &:before {
-          content: "";
-          display: block;
-          padding-top: 100%; 
-        }
-        &.expanded {
-          max-width: 100%;
-          max-height: 100%;
+    .lightbox {
+      max-height: calc(90vh - 82px);
+      overflow-y: auto;
+      padding: calc(#{$default-padding} * 2);    
+      .project-image-wrapper {
+        @include flex(column, center, center);
+        font-style: italic;
+        font-size-adjust: 0.8;
+        img {
+          max-width: 60%;
+          max-height: 400px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          border-radius: 5px;
+          margin-bottom: calc(#{$default-padding} / 2);
+          cursor: pointer;
+          transition: all .5s;
+          &:before {
+            content: "";
+            display: block;
+            padding-top: 100%; 
+          }
+          &.expanded {
+            max-width: 100%;
+            max-height: 100%;
+          }
         }
       }
     }
-  }
-  .mfp-close {
-    top: $default-padding;
-    right: $default-padding;
-    &:active {
-      top: 20px;
+    .mfp-close {
+      top: $default-padding;
+      right: $default-padding;
+      &:active {
+        top: 20px;
+      }
     }
   }
 }
@@ -51,9 +56,9 @@
 .mfp-fade.mfp-bg {
   opacity: 0;
 
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
